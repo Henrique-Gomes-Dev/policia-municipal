@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polícia Municipal - Juazeiro do Norte</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --azul-policia: #002D5E;
+            --dourado: #C5A059;
+            --verde-sucesso: #28a745;
+        }
+
+        body { font-family: 'Segoe UI', Roboto, sans-serif; background-color: #f8f9fa; }
+
+        /* Navbar Customizada */
+        .navbar { background-color: var(--azul-policia); border-bottom: 3px solid var(--dourado); padding: 0.8rem 1rem; }
+        
+        /* Centralizando os itens do menu */
+        .navbar-nav.center-menu { margin: 0 auto; }
+        
+        .nav-link { color: white !important; font-weight: 500; margin: 0 10px; text-transform: uppercase; font-size: 0.85rem; }
+        .nav-link:hover { color: var(--dourado) !important; }
+
+        /* Botão SSGCM */
+      /* Botão SSGCM Estilo Moderno e Arredondado */
+.btn-ssgcm {
+    background: linear-gradient(135deg, var(--dourado) 0%, #a6854a 100%);
+    color: var(--azul-policia) !important;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-radius: 50px; /* Formato pilula totalmente arredondado */
+    padding: 10px 25px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.btn-ssgcm i {
+    transition: transform 0.3s ease;
+}
+
+/* Efeitos ao passar o mouse (Hover) */
+.btn-ssgcm:hover {
+    background: white;
+    color: var(--azul-policia) !important;
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 8px 25px rgba(197, 160, 89, 0.4);
+    border-color: var(--dourado);
+}
+
+.btn-ssgcm:hover i {
+    transform: rotate(-10deg) scale(1.2);
+}
+
+/* Efeito de clique */
+.btn-ssgcm:active {
+    transform: scale(0.95);
+}
+       
+
+        /* Carrossel */
+        .carousel-item { height: 450px; background-color: #000; }
+        .carousel-item img { object-fit: cover; height: 100%; width: 100%; opacity: 0.6; }
+        .carousel-caption { background: rgba(0,0,0,0.7); border-radius: 8px; padding: 20px; cursor: pointer; }
+
+        /* Cards Modernos de Gestão */
+        .profile-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: none;
+            transition: 0.3s;
+        }
+        .profile-card:hover { transform: translateY(-5px); }
+        .profile-img { width: 110px; height: 110px; border: 4px solid #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        
+        .badge-amparo { background-color: #e9ecef; color: var(--azul-policia); font-size: 0.75rem; border-left: 4px solid var(--azul-policia); }
+
+        footer { background: var(--azul-policia); color: white; padding: 30px 0; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./assets/logo-policia-semfundo.png" alt="Logo" width="45">
+                <div class="ms-2 d-none d-sm-block">
+                    <div class="text-white fw-bold lh-1" style="font-size: 1rem;">POLÍCIA MUNICIPAL</div>
+                    <div class="text-white-50 small" style="font-size: 0.7rem;">JUAZEIRO DO NORTE</div>
+                </div>
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav center-menu text-center">
+        <li class="nav-item"><a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">Quem Somos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">Valores</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.juazeirodonorte.ce.gov.br/" target="_blank" rel="noopener noreferrer">Prefeitura</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://portaldoservidor.aspec.com.br/230730401" target="_blank" rel="noopener noreferrer">Contra-cheque</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" target="_blank" rel="noopener noreferrer">Notícias</a></li>
+    </ul>
+    
+    <div class="d-flex justify-content-center">
+        <a href="#" class="btn btn-ssgcm" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-shield-halved me-2"></i>
+            <span>Sistema SIPM</span>
+        </a>
+    </div>
+</div>
+    </nav>
+
+    <div id="heroCarousel" class="carousel slide shadow" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active" onclick="alert('História da Ocorrência 01')">
+            <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=1469" alt="Ocorrência 1">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Operação Romeiro Seguro</h5>
+                <p>Clique para ler sobre a proteção dos fiéis na Praça do Romeiro.</p>
+            </div>
+        </div>
+        
+        <div class="carousel-item" onclick="alert('História da Ocorrência 02')">
+            <img src="./assets/rope2.jpg" alt="Ocorrência 2">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Ronda Ostensiva Escolar</h5>
+                <p>Saiba como funciona a preservação das escolas publicas no nosso municipio.</p>
+            </div>
+        </div>
+
+        <div class="carousel-item" onclick="alert('História da Ocorrência 03')">
+            <img src="./assets/gptram.jpg" alt="Ocorrência 3">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Fiscalização de Trânsito</h5>
+                <p>Atuação da Policia Municipal no ordenamento das vias municipais.</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.8));"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" style="filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.8));"></span>
+        <span class="visually-hidden">Próximo</span>
+    </button>
+</div>
+
+    <section class="container py-5">
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="card profile-card p-4 h-100">
+                    <div class="d-flex flex-column flex-md-row align-items-center text-center text-md-start">
+                        <img src="./assets/cmt cesar alves.jpg" class="rounded-circle profile-img mb-3 mb-md-0" alt="Julio Cesar">
+                        <div class="ms-md-4">
+                            <h5 class="fw-bold mb-1">JULIO CESAR DOS SANTOS ALVES <i class="fas fa-check-circle text-success ms-1"></i></h5>
+                            <p class="text-muted small fw-bold mb-2">COMANDANTE DA GUARDA CIVIL METROPOLITANA</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-secondary small" style="text-align: justify;">
+                            Guarda Civil Metropolitano de Juazeiro do Norte desde 2007. Graduando em Gestão Pública, com certificação em Gestão Financeira e Orçamentária. Militante classista, foi presidente da AJUGAM (2009/2012) e vice-presidente do SINDIGUARDAS CARIRI. Atuou como Comandante da GCM do Crato (2013/2014).
+                        </p>
+                        <div class="badge-amparo p-2 rounded">
+                            <i class="fas fa-file-signature me-2"></i><strong>AMPARO:</strong> NOMEAÇÃO: 0680/2025 - 02/04/2025
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card profile-card p-4 h-100">
+                    <div class="d-flex flex-column flex-md-row align-items-center text-center text-md-start">
+                        <img src="./assets/sec-claudio.jpg" class="rounded-circle profile-img mb-3 mb-md-0" alt="Secretário">
+                        <div class="ms-md-4">
+                            <h5 class="fw-bold mb-1">Cláudio Sergei Luz e Silva</h5>
+                            <p class="text-muted small fw-bold mb-2">SECRETÁRIO DE SEGURANÇA PÚBLICA (SESP)</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-secondary small" style="text-align: justify;">
+                            O Secretário Municipal de Segurança Pública e Cidadania de Juazeiro do Norte é Cláudio Luz (Cláudio Sergei Luz e Silva), que já atuou na pasta anteriormente
+                            e é aposentado da Polícia Federal, sendo um nome ativo na gestão municipal, atuando com foco em políticas de segurança e integração das forças locais.
+                            Natural de Fortaleza, no estado do Ceará. É formado em Computação e Direito, pela Universidade Federal do Ceará - UFC, onde atuou como presidente do Centro
+                            Acadêmico de Computação. Foi secretário na Pasta da Segurança Pública e Cidadania de Juazeiro do Norte de 2009 a 2012, e assumiu uma vaga na Câmara dos
+                            Vereadores, de 2013 a 2016. Atualmente, reside em Juazeiro do Norte (CE) e é aposentado no efetivo da Polícia Federal, onde atuou por 26 anos. É Agroflorestor, 
+                            viveirista de árvores nativas, meliponicultor e apicultor. 
+                        </p>
+                        <div class="badge-amparo p-2 rounded" style="border-left-color: var(--dourado);">
+                            <i class="fas fa-calendar-check me-2"></i><strong>GESTÃO:</strong> 2025 - EM EXERCÍCIO
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <div class="mb-3">
+                <a href="#" class="text-white me-3 fs-4"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white fs-4"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p class="mb-0 small">© 2026 Polícia Municipal de Juazeiro do Norte. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
